@@ -1,0 +1,15 @@
+.navbar-container {
+  position: sticky;
+  top: 0;
+  .nav {
+    .nav-text {
+      color: var(--main-color);
+      &:hover {
+        color: var(--secondary-color);
+      }
+    }
+    .active {
+      color: var(--secondary-color);
+    }
+  }
+}
