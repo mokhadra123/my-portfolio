@@ -1,0 +1,136 @@
+.about-container {
+  margin-top: 150px;
+  display: grid;
+  grid-template-columns: 1.4fr 1.7fr;
+  .rigt-about-container {
+    position: relative;
+    img {
+      border-radius: 20px;
+      width: 380px;
+      height: 320px;
+    }
+    .main {
+      width: 200px;
+      height: 200px;
+      display: grid;
+      align-items: center;
+      justify-items: center;
+      position: absolute;
+      right: 0;
+      top: 200px;
+      background-color: white;
+      border-radius: 50%;
+      .icon {
+        font-size: 40px;
+        position: absolute;
+        filter: drop-shadow(0px 0px 5px #333);
+      }
+      #rotatingText {
+        animation-name: rotate-circle;
+        animation-duration: 15s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        @keyframes rotate-circle {
+          to {
+            transform: rotate(1turn);
+          }
+        }
+
+        .text {
+          font-weight: 600;
+          letter-spacing: 6px;
+          text-transform: uppercase;
+          font-family: "Kanit";
+          font-size: 20px;
+          fill: #111;
+          text-shadow: 2px 0px #ccc;
+        }
+      }
+    }
+  }
+  .left-about-container {
+    .about-title {
+      font-size: 18px;
+      font-weight: 900;
+      color: rgb(15, 115, 255);
+      letter-spacing: 1px;
+    }
+    .about-sub-title {
+      font-size: 27px;
+      font-weight: 900;
+      margin: 10px 0;
+    }
+    .about-text {
+      font-weight: 500;
+      color: var(--secondary-color);
+    }
+  }
+}
+/* ============= MEDIA QUERIES (MEDIUM DEVICES) ============= */
+
+@media screen and (max-width: 1024px) {
+  .container {
+    display: block;
+    .rigt-about-container {
+      position: relative;
+      width: 90%;
+      display: block;
+      margin: 0 auto;
+
+      img {
+        width: 100%;
+        margin: 0 auto;
+        height: 400px;
+      }
+      .main {
+        width: 200px;
+        height: 200px;
+        right: -100px;
+        top: 280px;
+      }
+    }
+    .left-about-container {
+      margin-top: 50px;
+      text-align: center;
+      .about-title {
+        font-size: 20px;
+        font-weight: 900;
+        color: rgb(15, 115, 255);
+        letter-spacing: 1px;
+      }
+      .about-sub-title {
+        font-size: 27px;
+      }
+    }
+  }
+}
+
+/* ============= MEDIA QUERIES (SMALL DEVICES) ============= */
+
+@media screen and (max-width: 600px) {
+  .container {
+    .rigt-about-container {
+      position: relative;
+      width: 100%;
+      display: block;
+      margin: 0 auto;
+
+      img {
+        width: 100%;
+        margin: 0 auto;
+        height: 300px;
+      }
+      .main {
+        width: 200px;
+        height: 200px;
+        right: -35px;
+        top: 170px;
+      }
+    }
+    .left-about-container {
+      .about-sub-title {
+        font-size: 25px;
+      }
+    }
+  }
+}
