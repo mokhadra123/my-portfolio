@@ -1,0 +1,57 @@
+.contact-container {
+  margin-top: 170px;
+  margin-bottom: 70px;
+  .section-title,
+  .sub-section-title {
+    font-weight: 700;
+  }
+  .loc-mail-container {
+    margin: 30px 0 10px;
+    width: 60%;
+    display: flex;
+    gap: 90px;
+    .loc-container,
+    .email-container {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      .loc-mail-title {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .loc-mail-text {
+        font-weight: 500;
+      }
+    }
+  }
+}
+/* ============= MEDIA QUERIES (SMALL DEVICES) ============= */
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-sm);
+
+    .loc-mail-container {
+      margin: 30px 0 10px;
+      width: 60%;
+      display: block;
+
+      .loc-container,
+      .email-container {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        margin-top: 10px;
+        .loc-mail-title {
+          font-size: 20px;
+          font-weight: bold;
+        }
+        .loc-mail-text {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

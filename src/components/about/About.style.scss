@@ -26,10 +26,10 @@
         filter: drop-shadow(0px 0px 5px #333);
       }
       #rotatingText {
-        animation-name: rotate-circle;
-        animation-duration: 15s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
+        // animation-name: rotate-circle;
+        // animation-duration: 15s;
+        // animation-timing-function: linear;
+        // animation-iteration-count: infinite;
         @keyframes rotate-circle {
           to {
             transform: rotate(1turn);
@@ -49,16 +49,9 @@
     }
   }
   .left-about-container {
-    .about-title {
-      font-size: 18px;
-      font-weight: 900;
-      color: rgb(15, 115, 255);
-      letter-spacing: 1px;
-    }
-    .about-sub-title {
-      font-size: 27px;
-      font-weight: 900;
-      margin: 10px 0;
+    .section-title,
+    .sub-section-title {
+      font-weight: 700;
     }
     .about-text {
       font-weight: 500;

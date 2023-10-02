@@ -14,7 +14,6 @@ html {
 :root {
   --main-color: #222;
   --secondary-color: #757575;
-  --color-white: #fff;
   --trasition: all 400ms ease;
   --container-width-lg: 65%;
   --container-width-md: 86%;
@@ -39,13 +38,6 @@ code {
   width: var(--container-width-lg);
   margin: 0 auto;
 }
-h1,
-h2 {
-  font-weight: 700;
-}
-h1 {
-  font-size: 2.5rem;
-}
 
 a {
   color: var(--color-primary);
@@ -53,7 +45,7 @@ a {
 }
 
 a:hover {
-  color: var(--color-white);
+  color: var(--secondary-color);
 }
 
 .btn {
@@ -72,6 +64,20 @@ a:hover {
   border-color: transparent;
 }
 
+.section-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: rgb(15, 115, 255);
+  letter-spacing: 1px;
+}
+.sub-section-title {
+  font-size: 27px;
+  font-weight: 900;
+  margin: 10px 0;
+}
+p {
+  color: var(--secondary-color);
+}
 /* ============= MEDIA QUERIES (MEDIUM DEVICES) ============= */
 
 @media screen and (max-width: 1024px) {
